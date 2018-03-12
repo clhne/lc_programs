@@ -24,7 +24,7 @@ int main(int ac, char* av[])
     
     printf("atan2(-1/1) : %f\n",cov*atan2(1.0,-1));
     printf("atan(-1/1) : %f\n",cov*atan(-1));
-    //printf("atan 0 : %f\n",atan(1.0/0));
+    printf("atan2f (-1,1) : %f\n",cov * atan2f(-1.0,1));
 
     //system("pause");
 
