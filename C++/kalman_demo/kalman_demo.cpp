@@ -2,11 +2,15 @@
 using namespace std;
 float z[10] = {0.39, 0.50, 0.48, 0.29, 0.25, 0.32, 0.34, 0.48, 0.41, 0.45};
 float R = 0.1, p[10] = {1}, x[10] = {0},k[10] = {0};
+
+//TimeUpdate: prediction
 float time_update(int i){
-        x[i+1] = x[i];
-        p[i+1] = p[i];
+        x[i] = x[i];
+        p[i] = p[i];
     return 0;
 }
+
+//Measurement Update: correction
 float measurement_update(int j){
         k[j+1] = p[j]/(p[j] + R);
         x[j+1] = x[j] + k[j+1]*(z[j+1]-x[j]);
