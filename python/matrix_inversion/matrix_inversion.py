@@ -12,3 +12,7 @@ print(inv(c))
 d = np.array([[5, -1, -1, -1],[-1, 5, -1, -1],[-1, -1, 5, -1],[-1, -1, -1, 5]])
 print(d)
 print(inv(d))
+e = np.array([[7, 2],
+              [2, 4]])
+print(e)
+print(inv(e))
