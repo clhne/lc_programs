@@ -1,9 +1,10 @@
 clc;
 clear all;
 close all;
-input_data = load('input_data.txt');
-irr_data = load('iir_data.txt');
-plot(input_data);
+input_data = load('input_data.txt')
+iir_data = load('iir_data.txt')
+plot(input_data,'b');
 hold on;
-figure
-plot(irr_data);
+plot(iir_data,'r');
+grid on;
+legend('Input','IIR',-1);
