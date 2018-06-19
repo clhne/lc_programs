@@ -26,8 +26,6 @@ int main(){
 	
 	//irr_1ord_filter(irr_data, input_data), then write irr data to irr_data.txt
 	myfile.open("iir_data.txt");
-	//irr_1ord_filter(iir_data, input_data, &index, length);
-	
 	for (i = 1; i < 10; i++){
 		if(is_init){
 			iir_data[0]=input_data[0]*(1-coef) + iir_data[0]*coef;
