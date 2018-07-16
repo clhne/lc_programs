@@ -6,5 +6,5 @@ def softmax(x):
     softmax_x = exp_x / np.sum(exp_x)
     return softmax_x
 
-x = [1,4,2]
+x = [1,2,3,4,5]
 print(softmax(x))
