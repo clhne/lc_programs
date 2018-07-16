@@ -3,7 +3,7 @@
 #define SIZE 5
 using namespace std;
 
-softmax(double *x)
+void softmax(double *x)
 {
     double max = 0.0;
     double sum = 0.0;
